@@ -1,0 +1,23 @@
+function gradeResult() {
+var myEnglishResult = parseInt(document.getElementById("value1").value);
+var myMathsResult = parseInt(document.getElementById("value2").value);
+var myIrishResult = parseInt(document.getElementById("value3").value);
+
+if (!myEnglishResult) {
+	alert("Please enter a result");
+}
+else {
+	if(myEnglishResult>90) {
+		grade = 'A';
+	} else if (myEnglishResult>80) {
+		grde = 'B';
+	} else {
+		grade ='F';
+	}
+	var message = 'Your result of ' + myEnglishResult + 'gets a grade' + grade;
+	console.log (message);
+	document.getElementById("resultsentence").innerHTML = message;
+}
+
+
+}
